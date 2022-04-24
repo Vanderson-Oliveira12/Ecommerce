@@ -7,13 +7,13 @@ header{
 }
 
 .header-main{
-    height: 85vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .header-main-text{
+    padding: 3rem 0;
     text-align: center;
     
     h2{
@@ -22,7 +22,7 @@ header{
     }
 
     h1{
-        font-size: 3.8rem;
+        font-size: 4rem;
     }
 }
 
@@ -39,35 +39,19 @@ header{
     position: relative;
 
     img{
-        width: 430px;
+        width: 100%;
+        max-width: 500px;
         height: auto;
     }
 }
 
-.header-main-img-one a, .header-main-img-two a{
-    cursor: default;
+.header-main-img-one, .header-main-img-two{
+    position: relative;
 
-    &::before{
-        content: 'Ver mais';
-        cursor: pointer;
-        color: white;
-        height: 50px;
-        width: 200px;
-        position: absolute;
-        top: 50%;
-        left: 25%;
-        right: 25%;
-        background-color: #fff;
-        color: #000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: .5s ease;
-    }
-
-    &:hover:before{
-        height: 55px;
-        width: 205px;
-    }
+        a{
+            position: absolute;
+            top: 50%;
+            left: 35%;
+        }
 }
 

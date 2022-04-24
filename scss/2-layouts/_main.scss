@@ -1,0 +1,118 @@
+@use '../1-base/mixins';
+@use '../1-base/variables';
+
+main{
+    @include mixins.align
+}
+
+/* Classes Genericas */
+
+.container{
+    margin-top: 1.5rem;
+    padding: 7rem 0;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Zerei o padding da seção outfit para fica igual ao esboço do figma */
+
+.outfit-main{
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.outfit-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+
+        h2{
+            font-size: 3rem;
+            color: variables.$text-color;
+        }
+
+        h1{
+            font-size: 3.8rem;
+            color: variables.$bold-color;
+        }
+
+        p{
+            width: 80%;
+            line-height: 2.3rem;
+        }
+}
+
+.outfit-img{
+    position: relative;
+    width: 50%;
+
+        img{
+            width: 100%;
+            display: block;
+            transition: 1s ease;
+        }
+
+        .outfit-link{
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        a{
+            padding: 1rem;
+            color: white;
+
+        }
+        i{
+            color: white;
+        }
+}
+
+.more-products{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.more-img{
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+
+        img{
+            width: 100%;
+            display: block;
+        }
+
+        .more-link{
+            position: absolute;
+            top: 80%;
+            left: 43%;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            a{
+                color: #fff;
+            }
+
+            i{
+                color: white;
+            }
+        }
+}

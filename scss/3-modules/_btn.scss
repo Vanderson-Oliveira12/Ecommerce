@@ -1,0 +1,36 @@
+@use '../1-base/variables';
+
+.btn{
+    color: white;
+    background-color: variables.$btn-bg;
+    width: 200px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: .7s ease;
+    font-weight: bold;
+    display: inline-block;
+
+        &:hover{
+            font-weight: bold;
+            color: variables.$bold-color;
+            background-color: transparent;
+            border: 1px solid variables.$btn-bg;
+        }
+}
+
+.btn-light{
+    height: 50px;
+    width: 200px;
+    background-color: #fff;
+    color: #000;
+    transition: .5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+        &:hover{
+            background-color: transparent;
+            border: 1px solid #fff;
+            color: white;
+        }
+}

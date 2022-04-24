@@ -1,0 +1,55 @@
+@use '../1-base/mixins';
+@use '../1-base/variables';
+
+.best-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 14rem;
+}
+
+.best-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.photo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    padding: 2rem;
+    background-color: white;
+}
+
+.best-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 360px;
+    gap: 1rem;
+
+        .best-price{
+            display: flex;
+            align-items: center;
+            gap: 1.4rem;
+            font-weight: 400;   
+            font-size: 1.6rem;
+        }
+
+        .promo{
+            font-size: 1.4rem;
+            text-decoration: line-through;
+        }
+
+        .promo-new{
+            font-weight: bold;
+            color: #FF705C;
+        }
+
+}
